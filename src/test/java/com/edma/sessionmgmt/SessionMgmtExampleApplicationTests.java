@@ -1,4 +1,4 @@
-package com.techprimers.sessionmgmt;
+package com.edma.sessionmgmt;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

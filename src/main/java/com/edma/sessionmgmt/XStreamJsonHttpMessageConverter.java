@@ -1,4 +1,4 @@
-package com.techprimers.sessionmgmt;
+package com.edma.sessionmgmt;
 
 import com.thoughtworks.xstream.XStream;
 import org.springframework.http.HttpInputMessage;

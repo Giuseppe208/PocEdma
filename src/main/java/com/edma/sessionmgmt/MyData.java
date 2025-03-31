@@ -1,4 +1,4 @@
-package com.techprimers.sessionmgmt;
+package com.edma.sessionmgmt;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

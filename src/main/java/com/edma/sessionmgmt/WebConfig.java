@@ -1,4 +1,4 @@
-package com.techprimers.sessionmgmt;
+package com.edma.sessionmgmt;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 import com.thoughtworks.xstream.io.xml.Dom4JDriver;
@@ -24,8 +24,8 @@ public class WebConfig implements WebMvcConfigurer {
         xStreamJson.alias("customer", Customer.class);  // Definisci il tuo alias
 
         // Permetti esplicitamente la classe Customer
-        xStreamJson.addPermission(new WildcardTypePermission(new String[] { "com.techprimers.sessionmgmt.Customer" }));
-        xStreamJson.addPermission(new WildcardTypePermission(new String[] { "com.techprimers.sessionmgmt.DettaglioContatti" }));
+        xStreamJson.addPermission(new WildcardTypePermission(new String[] { "com.edma.sessionmgmt.Customer" }));
+        xStreamJson.addPermission(new WildcardTypePermission(new String[] { "com.edma.sessionmgmt.DettaglioContatti" }));
 
         // Usa un convertitore personalizzato per JSON
         XStreamJsonHttpMessageConverter jsonConverter = new XStreamJsonHttpMessageConverter();
@@ -38,8 +38,8 @@ public class WebConfig implements WebMvcConfigurer {
         xStream.alias("customer", Customer.class);  // Definisci il tuo alias
 
         // Permetti esplicitamente la classe Customer
-        xStream.addPermission(new WildcardTypePermission(new String[] { "com.techprimers.sessionmgmt.Customer" }));
-        xStream.addPermission(new WildcardTypePermission(new String[] { "com.techprimers.sessionmgmt.DettaglioContatti" }));
+        xStream.addPermission(new WildcardTypePermission(new String[] { "com.edma.sessionmgmt.Customer" }));
+        xStream.addPermission(new WildcardTypePermission(new String[] { "com.edma.sessionmgmt.DettaglioContatti" }));
         
         // Aggiungi il tuo XStreamHttpMessageConverter
         converters.add(1, new XStreamHttpMessageConverter(xStream));

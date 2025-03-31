@@ -1,4 +1,4 @@
-package com.techprimers.sessionmgmt;
+package com.edma.sessionmgmt;
 
 import java.util.Date;
 import java.util.List;
